@@ -1,7 +1,13 @@
 # 🚀 Evo-ImageAPI: Industrial-Grade DALL-E 3 / IMG2 Singularity Gateway
 # 🚀 Evo-ImageAPI：工业级 DALL-E 3 / IMG2 奇点生图网关
 
-[English](#english-readme) | [中文说明](#chinese-readme)
+<p align="center">
+  <a href="README.md">🇺🇸 English</a> | 
+  <a href="README.md#chinese-readme">🇨🇳 简体中文</a> | 
+  <a href="README_ja.md">🇯🇵 日本語</a> | 
+  <a href="README_ru.md">🇷🇺 Русский</a> | 
+  <a href="README_es.md">🇪🇸 Español</a>
+</p>
 
 ---
 
