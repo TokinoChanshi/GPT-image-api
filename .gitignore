@@ -1,0 +1,47 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+bin/
+obj/
+dist/
+node_modules/
+
+# Environment and secrets
+.env
+.env.local
+*.txt
+*.log
+*.png
+*.webp
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Go specific
+backend/evo_image_api.db
+backend/logs/
+backend/output/
+
+# Frontend specific
+frontend/dist/
+frontend/.vscode/
+
+# Local reference repositories
+gpt2api/
+basketikun_chatgpt2api/
+fran0220_chatgpt2api/
+gpt-image/
+
+# Other recovery fragments
+recovered_tokens.txt
+recovered_rts.txt
+recovered_ats.txt
+new_rts.txt
+ultimate_recovery.txt
+page_dump.txt
+db_hex.txt
+all_tokens.txt

@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_HOST=db
+      - REDIS_HOST=redis
+    depends_on:
+      - db
+      - redis
+    networks:
+      - evo-net
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - evo-net
+
+  db:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=evo_image_api
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - evo-net
+
+  redis:
+    image: redis:7.0-alpine
+    networks:
+      - evo-net
+
+networks:
+  evo-net:
+    driver: bridge
+
+volumes:
+  mysql-data:
